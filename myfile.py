@@ -303,7 +303,7 @@ st.plotly_chart(fig6)
 st.header("Nombre de pièces principales en fonction de la surface réelle bati")
 allData["Nombre pieces principales"]=allData["Nombre pieces principales"].astype(float)
 
-ch = st.radio("Choisir les annee à visualiser (2018 n'a pas de data disponible et 2020 fait crash l'appli :confused_smiley:)", (2017,2019,2021))
+ch = st.radio("Choisir les annee à visualiser (2018 n'a pas de data disponible et 2020 ne fonctionne pas)", (2017,2019,2021))
 
 fig7=px.scatter(allData.loc[allData["Annee"]==ch],x="Surface reelle bati", y="Nombre pieces principales",color="Type de voie")
 
