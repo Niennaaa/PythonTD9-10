@@ -3,8 +3,9 @@
 
 ## ON UTILISE STREAMLIT 
 
-# to open the file : (windows)
+# to open the file with streamlit : (windows)
 #     1) open anaconda prompt and enter : cd "C:\Users\Jehanne\Desktop\ESILV\S6\Python\Projet"
+#           (obviously change path to wherever you saved the .py document)
 #     2) enter : streamlit run myfile.py
 #     3) activer 'settings'->'run on save' pour que l'app se relance à chaque sauvegarde
 #           
@@ -290,8 +291,6 @@ fig6 = px.scatter(allData.loc[allData["Annee"]<=slidertaille], x="Surface reelle
                  hover_name="Annee", log_x=True, size_max=200, height=800, width=800)
 st.plotly_chart(fig6)
 
-liste_data=[df2017,df2018,df2019,df2020,df2021]
-liste_annee=["2017","2018","2019","2020","2021"]
 
 ####
 
@@ -299,13 +298,6 @@ liste_annee=["2017","2018","2019","2020","2021"]
 
 st.header("Nombre de pièces principales en fonction de la surface réelle bati")
 allData["Nombre pieces principales"]=allData["Nombre pieces principales"].astype(float)
-
-d2017=allData.loc[allData["Annee"]==2017]
-d2018=allData.loc[allData["Annee"]==2018]
-d2019=allData.loc[allData["Annee"]==2019]
-d2020=allData.loc[allData["Annee"]==2020]
-d2021=allData.loc[allData["Annee"]==2021]
-
 
 ch = st.radio("Choisir les annee à visualiser (2018 n'a pas de data disponible et 2020 fait crash l'appli :confused_smiley:)", (2017,2019,2021))
 
