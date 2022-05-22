@@ -4,7 +4,7 @@
 ## ON UTILISE STREAMLIT 
 
 #pour l'installer la premiere fois (windows) : 
-    #dans anaconda > pip install streamlit
+    #dans anaconda prompt > pip install streamlit
     #ensuite voir plus bas
 
 # to open the file with streamlit : (windows)
