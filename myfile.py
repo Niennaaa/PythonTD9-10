@@ -3,6 +3,10 @@
 
 ## ON UTILISE STREAMLIT 
 
+#pour l'installer la premiere fois (windows) : 
+    #dans anaconda > pip install streamlit
+    #ensuite voir plus bas
+
 # to open the file with streamlit : (windows)
 #     1) open anaconda prompt and enter : cd "C:\Users\Jehanne\Desktop\ESILV\S6\Python\Projet"
 #           (obviously change path to wherever you saved the .py document)
